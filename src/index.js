@@ -56,7 +56,7 @@ function changeLocalTemp(event) {
       changeCurrentCity.innerHTML = response.data[0].name;
     }
     let apiKey = "91d9a2c92e23f81f6af46fe1bf68b707";
-    let locationApiUrl = `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+    let locationApiUrl = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
 
     axios.get(locationApiUrl).then(changeLocalCity);
 
